@@ -3,7 +3,7 @@
 Imports wait_random from the previous python file and writes
 an async routine that spawns wait_random n times with the specified max_delay
 """
-import typing
+from typing import List
 import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
