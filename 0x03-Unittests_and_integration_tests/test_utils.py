@@ -30,5 +30,5 @@ class TestAccessNestedMap(unittest.TestCase):
         """
         Tests that keyError is raised if the key in the tuple is not found
         """
-        self.assertRaises(KeyError, access_nested_map(nested_map, path),
-                          expected)
+        with self.assertRaises(KeyError):
+            access_nested_map((nested_map, path), expected)
